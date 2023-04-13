@@ -3,5 +3,6 @@ transformers==4.27.4
 streamlit==1.21.0
 pillow==8.4.0
 numpy==1.19.5
-torch==1.9.0+cpu
-torchvision==0.10.0+cpu
+torch==1.9.1+cpu
+torchvision==0.10.1+cpu
+
