@@ -54,3 +54,5 @@ if uploaded_file is not None:
     )
     with st.spinner("Generating variation..."):
         output_tensor = sd_pipe(input_tensor, guidance_scale=guidance_scale)["images"][0]
+        output_image = transforms.ToPILImage()(output_tensor.detach())
+        st.image(output_image, caption="Output Image", use_column_width=True)
